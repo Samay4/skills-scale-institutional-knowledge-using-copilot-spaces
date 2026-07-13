@@ -1,81 +1,43 @@
-# OctoAcme Personas
+# Roles and Personas
 
-This document defines typical roles and responsibilities used in OctoAcme project docs and exercises.
+This document lists roles and personas defined for OctoAcme projects and how they interact.
 
----
+## Additional Personas and Role Responsibilities
 
-## Developers
+### Delivery Lead (Program-level)
+- Responsibilities: Owns delivery across multiple related projects; coordinates roadmaps, prioritization between teams, and risk trade-offs. Ensures cross-project dependencies are visible and mitigated.
+- Interactions: Works with Product Owner(s) for prioritization, Engineering Manager(s) for capacity planning, and Release Manager for scheduling deployments.
 
-### Role Summary
-Developers design, build, test, and deliver software components. They collaborate with product and project leads to implement features that meet acceptance criteria and quality standards.
+### Release Manager
+- Responsibilities: Owns release planning, deployment runbooks, cutover plans, and post-release verification. Maintains release calendar and communicates release risks.
+- Interactions: Coordinates with Engineering teams, QA, Security, and Site Reliability to schedule releases and rollbacks.
 
-### Responsibilities
-- Implement features and fixes to meet acceptance criteria
-- Write and maintain tests and documentation
-- Participate in design and code reviews
-- Assist in estimating and planning work
-- Help identify technical risks and propose mitigations
+### Quality Advocate (QA Persona)
+- Responsibilities: Defines acceptance criteria, test strategies, and ensures automated test coverage requirements are met. Champions quality earlier in the lifecycle.
+- Interactions: Partners with Developers for testability, Product for acceptance criteria, and Release Manager to sign off releases.
 
-### Goals
-- Deliver reliable, maintainable code
-- Reduce cycle time from idea to production
-- Maintain high test coverage and observability
+### Integration / Partner Liaison
+- Responsibilities: Manages third-party vendor relationships, integration contracts, API change coordination, and data-sharing agreements.
+- Interactions: Works with Architects for integration design, Product for scope, and Legal/Procurement for contracts.
 
-### Typical Communication
-- Daily standups and sprint planning
-- PR descriptions and code review comments
-- Technical design docs when needed
+### Stakeholder Communications Lead
+- Responsibilities: Owns stakeholder updates, executive summaries, and manages the stakeholder feedback loop. Ensures messaging consistency.
+- Interactions: Pulls status from Delivery Lead and Product Owners and coordinates communications with Marketing/Comms as needed.
 
----
+### Security & Compliance Representative
+- Responsibilities: Reviews feature designs for security/compliance impacts, signs off on risk assessments, and ensures necessary controls are documented.
+- Interactions: Works with Architects, Engineering, and Release Manager to ensure compliance checks are included in the release checklist.
 
-## Product Managers
+## How this improves outcomes
+- Clearer ownership reduces delays: explicit role responsibilities remove ambiguity about who makes decisions or performs key tasks.
+- Faster onboarding: new team members can quickly understand where responsibilities lie.
+- Better risk and release management: introducing Release Manager and Quality Advocate roles improves gating and reduces incident rates.
+- Smoother third-party coordination: Integration Liaisons reduce missed compatibility issues and contract surprises.
 
-### Role Summary
-Product Managers define what should be built to deliver customer and business value. They own the product vision, prioritize the backlog, and measure outcomes.
+## Suggested placement
+Add a new section in docs/octoacme-roles-and-personas.md titled "Additional Personas and Role Responsibilities" and include the above entries. Where applicable, add cross-references to existing roles and update any diagrams that show role interactions.
 
-### Responsibilities
-- Define problem statements and success metrics
-- Prioritize the roadmap and backlog
-- Collaborate with stakeholders and engineering on trade-offs
-- Validate solutions through user research and metrics
-
-### Goals
-- Maximize customer value and impact
-- Make clear, data-driven prioritization decisions
-- Ensure product-market fit and usability
-
-### Typical Communication
-- Weekly alignment with PM and engineering leads
-- Roadmap updates and stakeholder briefings
-- Acceptance criteria and feature specs
-
----
-
-## Project Managers
-
-### Role Summary
-Project Managers coordinate delivery activities, manage schedules, risks, and communications. They enable the team to deliver on commitments efficiently.
-
-### Responsibilities
-- Create and maintain project plans and timelines
-- Manage risks, dependencies, and resource constraints
-- Facilitate meetings (kickoff, planning, retrospectives)
-- Ensure consistent project documentation and status reporting
-- Coordinate cross-team and stakeholder communication
-
-### Goals
-- Deliver projects on time and within scope
-- Minimize unplanned work and escalations
-- Maintain transparency and alignment across stakeholders
-
-### Typical Communication
-- Weekly status updates and stakeholder reports
-- Risk registers and decision logs
-- Coordination via project boards and meeting facilitation
-
----
-
-## How these personas are used in the exercise
-- Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
-- Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
-
+## Next steps (suggested)
+- Review proposed personas with Delivery Leads and Product Owners
+- Iterate language to match existing role naming conventions
+- Update process diagrams and notify teams of changes
